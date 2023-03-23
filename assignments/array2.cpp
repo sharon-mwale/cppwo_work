@@ -1,12 +1,5 @@
 #include <iostream>
 
-// If you put less elements than the amount specified in the declaration, the compiler
-// will automaticaly fill out those left out with 0 or '\0' is the array is of char.
-//  Change the array to int house_block [] [5] [4], and because all inner arrays have 3,
-//  elements, the fourth will be autofilled with 0.
-//  Also remove some other elements, I chose the {4,5,6} array but you can add others
-//  when recording to make this a bit fun. The left out indexes will be auto filled with
-//  zeros
 int main()
 {
     int house_block2[][5][4]{

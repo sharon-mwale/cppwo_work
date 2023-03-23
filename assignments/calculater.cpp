@@ -1,35 +1,43 @@
 #include <iostream>
 
-int main(){
+int main()
+{
     int a, b;
     float c;
     char ope;
-    std::cout << "Enter a value\n";
+    std::cout << "Enter a value: ";
     std::cin >> a;
-    std::cout << "Enter b value\n";
+    std::cout << "Enter b value: ";
     std::cin >> b;
-    std::cout << "Enter operation (+ - * / and %)";
+    std::cout << "Enter operation (+, -, *, / and %): ";
     std::cin >> ope;
-    if(ope == '+'){
+    if (ope == '+')
+    {
         c = a + b;
         std::cout << c;
     }
-    else if (ope == '-'){
+    else if (ope == '-')
+    {
         c = a - b;
-        std::cout << c;
-    }else if(ope == '*'){
+        std::cout << "Answer: " << c << std::endl;
+    }
+    else if (ope == '*')
+    {
         c = a * b;
-        std::cout << c;
+        std::cout << "Answer: " << c << std::endl;
     }
-    else if(ope == '/'){
+    else if (ope == '/')
+    {
         c = a / b;
-        std::cout << c;
+        std::cout << "Answer: " << c << std::endl;
     }
-    else if(ope == '%'){
+    else if (ope == '%')
+    {
         c = a % b;
-        std::cout << c;
+        std::cout << "Answer: " << c << std::endl;
     }
-    else{
+    else
+    {
         std::cout << "Enter wrong input\n";
     }
     return 0;
